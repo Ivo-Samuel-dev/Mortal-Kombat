@@ -1,0 +1,54 @@
+<div class="carrossel">
+    <div class="slides">
+ <img src="assets/kano.gif" class="slide">
+ <img src="assets/sonia.gif" class="slide">
+ <img src="assets/raiden.gif" class="slide">
+ <img src="assets/liukang.gif" class="slide">
+  <img src="assets/subzero.gif" class="slide">
+    </div>
+    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    /*Css*/
+    .carrossel {
+    position: center;
+    width: 50%;
+    max-width: 600px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-image: url("assets/mk1.gif");
+    background-size: cover;
+    border: 3px solid red;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 80%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}

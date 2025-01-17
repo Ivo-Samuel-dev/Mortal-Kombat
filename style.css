@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box
+  
+}
+body{
+  background-image: url("assets/background.jpg");
+
+ 
+}
+h3{
+        color: yellow;
+        text-align: center;
+        text-shadow: 2px 2px 1px
+        rgba(0, 0, 0, 1);
+}
+p{
+        color: lawngreen;
+        text-align: center;
+        text-shadow: 2px 2px 1px
+        rgba(0, 0, 0, 1);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+flex-wrap: wrap;
+ height: 20vh;
+ margin: 0 auto;
+  
+}
+
+.container img {
+    width: 70px;
+}
+.sonia-gif{
+ 
+   
+   margin: -17px;
+   width: 90px;
+
+    display: inline-block;
+     transform: scalez(-1)
+}
+
+.color-01{
+      
+    padding: 1px;
+    border: 3px solid lawngreen; /* Começa transparente */
+    animation: piscar 2.8s infinite; /* Chama a animação */
+}
+
+.kano-gif{
+    margin: -17px;
+   width: 90px;
+    
+    display: inline-block;
+     transform: scalex(-1)
+}
+.color-02{
+      padding: 1px;
+    border: 3px solid transparent; /* Começa transparente */
+    animation: piscar 2.4s infinite; /* Chama a animação */
+}
+
+/* Animação de piscar */
+@keyframes piscar {
+    0%, 100% {
+        border-color: greenyellow; /* Invisível no começo e no fim */
+    }
+    50% {
+        border-color: transparent; /* Cor da borda no meio do ciclo */
+    }
+
+}
+
+.show-person:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+.select-fight {
+    margin-top: 12px;
+    width: 100%;
+    height: 484px;
+}
+.arena {
+    width: 100%;
+    height: 100%;
+    background: url("assets/mk-bg.gif");
+    display: flex;
+    justify-content: space-around;
+}
+
+.lutadores img{
+    width: 120px;
+}
+
+.arena .lutadores {
+    align-self: flex-end;
+}
+
+
+.personagem-01{
+    opacity: 0;
+}
+.personagem-02{
+    transform: scalex(-1);
+    filter: invert(100%);
+}
+
+@media screen and (max-width:641px){
+    .container img {
+        width: 64px;
+    }
+    .select-fight {
+        height: 400px;
+        margin-top: 28px;
+    }
+
+    .arena {
+        background-position: center;
+    }
+
+    .lutadores img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:362px){
+    .container img {
+        width: 56px;
+    }
+
+    .select-fight {
+        height: 380px;
+        margin-top: 60px;
+    }
+
+    .arena {
+        background-position: center;
+    }
+
+    .lutadores img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:293px){
+    .container img {
+        width: 50px;
+    }
+
+    .select-fight {
+        height: 380px;
+        margin-top: 40px;
+    }
+
+    .arena {
+        background-position: center;
+    }
+
+    .lutadores img {
+        width: 60px;
+    }
+}
+
