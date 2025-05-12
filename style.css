@@ -5,16 +5,51 @@
   
 }
 body{
-  background-image: url("assets/background.jpg");
-
- 
+  background-image: url("assets/background.jpg")
 }
-h3{
+
+.logo-home {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.home-log {
+    padding-top: 8px;
+    width: 280px;
+    height: auto;
+    margin-inline: auto;
+    border: 4px solid black;
+}
+
+.itens-log {
+    margin-block: 12px;
+}
+
+.h-margin {
+    margin-bottom: 6px;
+    background-color: transparent;
+    width: auto;
+}
+.h-margin:hover {
+    margin-bottom: 6px;
+    background-color: rgb(61, 56, 56);
+    width: auto;
+}
+.h-center{
         color: yellow;
         text-align: center;
         text-shadow: 2px 2px 1px
         rgba(0, 0, 0, 1);
 }
+
+.h-center a {
+    color: aliceblue;
+}
+
+.h-center a:hover {
+    color: yellow;
+}
+
 p{
         color: lawngreen;
         text-align: center;
@@ -65,16 +100,20 @@ flex-wrap: wrap;
     animation: piscar 2.4s infinite; /* Chama a animação */
 }
 
+.invert{
+    transform: scalex(-1);
+}
+
 /* Animação de piscar */
-@keyframes piscar {
+/* @keyframes piscar {
     0%, 100% {
-        border-color: greenyellow; /* Invisível no começo e no fim */
+        border-color: greenyellow; 
     }
     50% {
-        border-color: transparent; /* Cor da borda no meio do ciclo */
+        border-color: transparent; 
     }
 
-}
+} */
 
 .show-person:active {
     transform: scale(0.95);

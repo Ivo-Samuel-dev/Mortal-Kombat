@@ -21,31 +21,31 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
+// let slideIndex = 0;
+// const slides = document.querySelectorAll('.slide');
 
-function mostrarSlide(index) {
-    // Garantir que o índice esteja no intervalo correto
-    if (index >= slides.length) {
-        slideIndex = 0;
-    } else if (index < 0) {
-        slideIndex = slides.length - 1;
-    } else {
-        slideIndex = index;
-    }
+// function mostrarSlide(index) {
+//     // Garantir que o índice esteja no intervalo correto
+//     if (index >= slides.length) {
+//         slideIndex = 0;
+//     } else if (index < 0) {
+//         slideIndex = slides.length - 1;
+//     } else {
+//         slideIndex = index;
+//     }
 
-    // Esconder todas as imagens e mostrar apenas a imagem atual
-    slides.forEach((slide, i) => {
-        slide.style.display = i === slideIndex ? 'block' : 'none';
-    });
-}
+//     // Esconder todas as imagens e mostrar apenas a imagem atual
+//     slides.forEach((slide, i) => {
+//         slide.style.display = i === slideIndex ? 'block' : 'none';
+//     });
+// }
 
-function mudarSlide(n) {
-    mostrarSlide(slideIndex + n);
-}
+// function mudarSlide(n) {
+//     mostrarSlide(slideIndex + n);
+// }
 
-// Mostrar o primeiro slide inicial
-mostrarSlide(slideIndex);
+// // Mostrar o primeiro slide inicial
+// mostrarSlide(slideIndex);
 
 let personagens = document.querySelectorAll('.show-person');
 
